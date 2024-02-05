@@ -1,0 +1,34 @@
+CREATE TABLE users (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    admin BOOL NOT NULL,
+    accepteret BOOL NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE vagter (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    user_id VARCHAR(50) NOT NULL,
+    dag INT(11) NOT NULL,
+    month INT(11) NOT NULL,
+    year INT(11) NOT NULL,
+    afdeling VARCHAR(255) NOT NULL,
+    vagt_accepteret BOOL NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE vagter_accepterede (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    user1_id INT NOT NULL,
+    user2_id INT NOT NULL,
+    vagt_id INT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE EVENT fjernGamleVagter
+ON SCHEDULE EVERY 1 DAY
+STARTS '2020-04-08 00:00:00'
+DO DELETE FROM `vagter` WHERE `year` < YEAR(CURDATE()) OR `year` = YEAR(CURDATE()) AND `month` < MONTH(CURDATE()) OR `year` = YEAR(CURDATE()) AND `month` = MONTH(CURDATE()) AND `dag` < DAY(CURDATE());

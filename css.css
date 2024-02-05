@@ -1,0 +1,453 @@
+.selected{
+  background-color: rgb(153, 180, 219);
+}
+.wrapper{
+
+}
+.containerDiv{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#responsiveDineOplysninger{
+  display: none;
+}
+body{
+  background-color: rgb(205,224,239);
+}
+
+#calendar-body, #calendar thead, #calendar thead tr{
+  text-align: center;
+
+}
+
+#calendar-body, #calendar thead{
+    display: table;
+}
+
+
+#calendar-body .WithDate{
+   cursor: pointer;
+
+}
+
+#calendar-body .WithDate:hover{
+  background-color: rgb(205,224,239);
+}
+#calendar tbody, #calendar tbody tr, #calendar thead{
+  width: 100% !important;
+}
+
+#calendar-body td, #calendar thead tr th{
+  width: calc(100%/7);
+}
+
+.card{
+  width: 95vw !important;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+}
+
+[class="container col-sm-4 col-md-7 col-lg-4 mt-5"]{
+  margin: 0;
+  padding: 0;
+}
+
+#calendar{
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.card-header{
+  background-color: rgba(255, 0, 0, 0);
+  border: 0;
+  color: white;
+}
+
+.header{
+  background-color:#606970;
+  width:100%;
+  height:64px;
+}
+
+.adminHeader{
+  margin-top:13px;
+  float:left;
+}
+
+.headerButton{
+  border-radius:5px;
+  margin-right: 5px;
+  border: 0;
+  padding: 6px 12px 6px 12px;
+  color:white;
+  background-color:#97A5B0;
+  font-size: 16px;
+  text-align: center;
+  height: 36px;
+  cursor: pointer;
+  float: left;
+}
+
+.headerButton:hover{
+  color:black;
+  text-decoration: none;
+}
+
+#account{
+  float:right;
+  margin-top:13px;
+}
+.accountButtons:hover{
+  color:black;
+  text-decoration: none;
+}
+
+.accountButtons{
+  border-radius:5px;
+  margin-right: 5px;
+  padding: 6px 12px 6px 12px;
+  float: right;
+  color:white;
+  background-color:#97A5B0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.accountButtons i{
+  margin: 4px 0px 4px 0px;
+}
+
+.currentDate{
+  background-color:#97A5B0;
+}
+.card-header-right{
+  position: absolute;
+  right: 20px;
+}
+.card-header-left{
+
+}
+.card-headerButton{
+  background-color: #97A5B0;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+}
+
+.card-headerButton:hover{
+  cursor: pointer;
+  color: black;
+}
+#previous{
+  margin-right: 5px;
+}
+
+.form-inline{
+  width: 100%;
+  margin: 0;
+  background-color:#606970 !important;
+}
+
+#flexDiv{
+  display: flex;
+  width: 100%;
+  margin-bottom: 49px;
+}
+
+.tableDiv{
+  width: 100%;
+}
+.tableHeaderDiv{
+  width: 100%;
+  background-color:#606970;
+  border: 1px solid #dee2e6;
+  border-collapse: collapse;
+}
+
+
+#ydreDiv{
+  width: 100%;
+  padding:0vw 2.5vw 0 2.5vw;
+  margin-top: 49px;
+}
+
+#datoDiv h3{
+  margin-bottom: 0;
+}
+
+#ydreDiv h3{
+  text-align: center;
+}
+.nedreKolonne{
+  flex: 1;
+}
+
+.nedreKolonne h3{
+  color:white;
+  text-align: left !important;
+  margin-bottom: 0;
+  padding: 12px 20px 12px 20px;
+}
+
+#aMenu{
+  display: none;
+}
+
+
+.tables, .responsiveTables, #responsiveDineOplysninger{
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+.tables thead tr th, .tables tbody tr td, .responsiveTables tbody tr td{
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-collapse: collapse;
+}
+
+#responsiveDineOplysninger td{
+  border: 1px solid #dee2e6;
+  border-collapse: collapse;
+}
+
+.tables tbody, .responsiveTables tbody, #responsiveDineOplysninger tbody {
+  background-color: white;
+}
+
+.inputTable tbody tr td {
+  padding: 0;
+}
+
+.inputTable tbody tr td input{
+  background-color: rgba(0,0,0,0);
+  border: 0;
+  padding: 9px;
+  width: 100%;
+  text-align: center;
+}
+
+.tables thead tr, .rTableHeaders{
+  text-align: center;
+  background-color:#97A5B0;
+  color: white;
+  font-weight: bold;
+}
+.tActionButton{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+#menuDiv{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 64px);
+}
+.menuButtonDiv{
+  margin-bottom: 10px;
+  width: 95vw;
+  border-radius: 5px;
+  background-color:#97A5B0;
+  text-align: center;
+  border-radius: 5px;
+  border: 10px solid #606970;
+  margin-left: 2.5vw;
+}
+#innerMenuDiv{
+
+  align-self: center;
+  width: 100%;
+}
+.menuButtonDiv a{
+  float: none;
+  font-size: 24px;
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.specialTRow{
+  background-color: rgb(153, 180, 219);
+}
+
+.labelDiv{
+  background-color:#97A5B0;
+}
+
+.inputDiv, .spanDiv{
+  background-color: white;
+}
+
+.form-guppe input{
+  border: 0;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+}
+.form-guppe label{
+  color:white;
+  padding: 12px;
+}
+.help-block{
+  color:red;
+}
+
+.dineOplysningerButton{
+  border-radius:5px;
+  margin-right: 5px;
+  border: 0;
+  padding: 6px 12px 6px 12px;
+  color:white;
+  background-color:#97A5B0;
+  font-size: 16px;
+  text-align: center;
+  height: 36px;
+  cursor: pointer;
+}
+
+.dineOplysningerButton:hover{
+  color:black;
+}
+
+
+
+
+#VagtBytteDiv, .brugerTables, #dineOplysningerDiv, #popUpDiv{
+  margin-top: 49px;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+}
+
+#VagtBytteDiv h3, .brugerTables h3, #dineOplysningerDiv h3, #popUpDivTitle{
+  color: white;
+  background-color:#606970;
+  padding: 12px 20px 12px 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.brugerTables p, #VagtBytteDiv p{
+  background-color: white;
+  padding: 6.5px 12px 6.5px 12px;
+  border: 1px solid #dee2e6;
+}
+
+#popUpDiv{
+  display: none;
+}
+
+#administrerBrugereDiv{
+  margin-bottom: 49px;
+}
+
+#nedreKolonneL{
+  margin-right:2.5vw;
+}
+.dineOplysningerTableButton input, .dineOplysningerTableButton button{
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 12px;
+}
+.dineOplysningerTableButton{
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.responsiveDineOplysninger .rTableHeaders{
+
+}
+
+#dineOplysningerDiv form .tables tbody td, #rTableNavn, #rTableEmail, #rTableAdgangskode, .dineOplysningerTableButton{
+  padding: 0;
+}
+
+.alternativeTime{
+  display: none;
+}
+
+#appt12{
+  width: 45%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (max-width: 693px) {
+  .tables{
+    white-space:normal !important;
+    width: 100%;
+  }
+  .tables tbody tr td{
+    max-width: 25%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #flexDiv{
+    display: block;
+  }
+  .header .admin{
+    display: none;
+  }
+  #aMenu{
+    display: block;
+  }
+#nedreKolonneL{
+    margin-right: 0;
+    margin-bottom: 49px;
+  }
+
+.hiddenMobile{
+  display: none;
+}
+.brugerTables td:hover{
+  cursor: pointer;
+  background-color: rgb(153, 180, 219);
+}
+
+#responsiveDineOplysninger{
+  display: table;
+
+
+}
+
+#dineOplysningerRTable{
+  display: none;
+}
+
+.responsiveDineOplysningerButton{
+  display: none;
+  padding: none;
+}
+
+#popUpDiv{
+  margin-bottom: 49px;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+  #calendar td,   #calendar th{
+    font-size: 11px;
+  }
+}
+  @media screen and (max-width: 769px) {
+
+    .vagterHiddenMobil{
+      display: none;
+    }
+    #vagtBytteTable td{
+      cursor: pointer;
+    }
+    #vagtBytteTable tbody tr:hover{
+      background-color: rgb(153, 180, 219);
+    }
+
+}
